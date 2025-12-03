@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Kapidafrica fashion</title>
+    <meta name="description" content="
+        KAPIDAFRICA FASHION is a tailoring and fashion design studio
+        specializing in Afro-fusion style.">
+
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    
+    <div id="darkening"></div>
+    <header>
+        <h1 id="mainTitle">Kapidafrica fashion</h1>
+        <nav>
+            <a href="#Products" onclick="showSection('productSection')" id="navProducts">Products</a>
+            <a href="#info" onclick="showSection('infoSection')" id="navInfo">Info</a>
+            <span id="Basket" onclick="toggleBasket()">Basket (0)</span>
+        </nav>
+        <div>
+            <select id="menuSelect">
+                <option value="en" selected>English</option>
+                <option value="it">Italiano</option>
+            </select>
+        </div>
+    </header>
+    <main>
+        <section id="productSection" class="activeSection">
+            <div id="categoryMenu"></div>
+            <h2 id="currentCategory">All Products</h2>
+            <div id="productList"></div>
+        </section>
+        <section id="infoSection" class="hiddenSection">
+            <div class="info-grid">
+                <div id="contactBox"></div>
+                <div id="locationBox"></div>
+                <div id="workingBox"></div>
+                <div id="otherInfoBox" class="other-info"></div>
+            </div>
+            <div style="display: flex; justify-content: center; align-items: center; gap: 30px; margin-top: 30px;">
+                <video src="images/info1.mp4" controls autoplay muted loop style="width:300px; height:auto; object-fit:cover;">
+                    Your browser does not support the video tag.
+                </video>
+                <img src="images/info1.jpg" alt="shop picture" style="width:300px; height:auto; object-fit:cover;">
+            </div>
+        </section>
+    </main>
+    <footer>
+        &copy; 2025 KAPIDAFRICA fashion
+    </footer>
+    <div id="basketPopup">
+        <h3 id="basketTitle">Your Basket</h3>
+        <div id="listProducts"></div>
+        <p><b id="totalLabel">Total: </b><span id="Total">0</span> €</p>
+        <button id="checkoutBtn" onclick="showCheckout()">Continue for payment</button>
+        <div id="checkoutForm" style="display:none;">
+            <h4 id="checkoutHeader">Choose order method</h4>
+            <label id="emailRadio"><input type="radio" name="method" value="mail" checked /> E-mail</label>
+            <label id="phoneRadio"><input type="radio" name="method" value="Phone" /> Phone (WhatsApp)</label>
+            <input type="text" id="nameSurnameInput" placeholder="Enter your name and surname" required />
+            <input type="text" id="addressInput" placeholder="Enter your address" required />
+            <div id="emailData">
+                <input type="email" id="emailInput" placeholder="Enter your e-mail" required />
+            </div>
+            <div id="phoneData" style="display:none;">
+                <input type="tel" id="telInput" placeholder="Enter your phone number" required pattern="[0-9+\s]+" />
+            </div>
+            <label id="paymentLabel">Payment method:</label>
+            <select id="paymentMethod"></select>
+            <button id="buyBtn" onclick="sendOrder()">Buy</button>
+        </div>
+        <span class="close-btn" onclick="toggleBasket()" id="closeBtnLabel">Close</span>
+    </div>
+    <div id="notification"></div>
+    <script src="script.js"></script>
+</body>
+</html>

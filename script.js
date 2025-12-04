@@ -22,10 +22,10 @@ const translations = {
     buyBtn: "Buy",
     closeBtn: "Close",
     productCategories: [
-      "All", "Bags", "Dress", "Hats", "Jackets", "Sweaters", "Vests", "Pants", "Shirts", "Skirts", "Tops", "Swimsuits", "Outfits"
+      "All", "Bags", "Dress", "Hats", "Jackets", "Sweaters", "Vests", "Pants", "Shirts", "Skirts", "Tops", "Bikinis", "Outfits"
     ],
     categoryNames: [
-      "Bags", "Dress", "Hats", "Jackets", "Sweaters", "Vests", "Pants", "Shirts", "Skirts", "Tops", "Swimsuits", "Outfits"
+      "Bags", "Dress", "Hats", "Jackets", "Sweaters", "Vests", "Pants", "Shirts", "Skirts", "Tops", "Bikinis", "Outfits"
     ],
     categoryTitle: "All Products",
     basketEmpty: "Basket is empty!",
@@ -83,7 +83,7 @@ const translations = {
       "Tutti", "Borse", "Vestito", "Capelli", "Giacche", "Maglioni", "Gilet", "Pantaloni", "Camicie", "Gonne", "Tops", "Costume da bagno", "Outfits"
     ],
     categoryNames: [
-      "Bags", "Dress", "Hats", "Jackets", "Sweaters", "Vests", "Pants", "Shirts", "Skirts", "Tops", "Swimsuits", "Outfits"
+      "Bags", "Dress", "Hats", "Jackets", "Sweaters", "Vests", "Pants", "Shirts", "Skirts", "Tops", "Bikinis", "Outfits"
     ],
     categoryTitle: "Tutti i prodotti",
     basketEmpty: "Il carrello è vuoto!",
@@ -143,9 +143,9 @@ const productsData = {
     { name: "Dress", price: 60, category: "Dress", picture: "images/dress10.jpg" },
     { name: "Dress", price: 35, category: "Dress", picture: "images/dress11.jpg" },
     { name: "Beach Dress", price: 35, category: "Dress", picture: "images/dress12.jpg" },
-    { name: "Dress", price: 35, category: "Dress", picture: "images/dress13.jpg" },
-    { name: "Dress", price: 35, category: "Dress", picture: "images/dress14.jpg" },
-    { name: "Dress", price: 35, category: "Dress", picture: "images/dress15.jpg" },
+    { name: "Dress", price: 65, category: "Dress", picture: "images/dress13.jpg" },
+    { name: "Dress", price: 65, category: "Dress", picture: "images/dress14.jpg" },
+    { name: "Dress", price: 45, category: "Dress", picture: "images/dress15.jpg" },
     { name: "Dress", price: 35, category: "Dress", picture: "images/dress16.jpg" },
 
 	
@@ -174,7 +174,7 @@ const productsData = {
     
     { name: "Sweater", price: 65, category: "Sweaters", picture: "images/sweater1.jpg" },
 
-    { name: "Vest", price: 65, category: "Vests", picture: "images/vest1.jpg" },
+    { name: "Vest", price: 35, category: "Vests", picture: "images/vest1.jpg" },
 
     { name: "Skirt", price: 60, category: "Skirts", picture: "images/skirt1.jpg" },
     { name: "Skirt", price: 60, category: "Skirts", picture: "images/skirt2.jpg" },
@@ -225,9 +225,9 @@ const productsData = {
     { name: "Top", price: 35, category: "Tops", picture: "images/top3.jpg" },
     { name: "Top", price: 35, category: "Tops", picture: "images/top4.jpg" },
 
-    { name: "Swimsuit", price: 00, category: "Swimsuits", picture: "images/swim1.jpg" },
-    { name: "Swimsuit", price: 00, category: "Swimsuits", picture: "images/swim2.jpg" },
-    { name: "Swimsuit", price: 00, category: "Swimsuits", picture: "images/swim3.jpg" },
+    { name: "Bikini", price: 15, category: "Bikinis", picture: "images/bikini1.jpg" },
+    { name: "Bikini", price: 15, category: "Bikinis", picture: "images/bikini2.jpg" },
+    { name: "Bikini", price: 30, category: "Bikinis", picture: "images/bikini3.jpg" },
 
 	
     { name: "Outfit", price: 120, category: "Outfits", picture: "images/fit1.jpg" },
@@ -269,9 +269,9 @@ const productsData = {
     { name: "Vestito", price: 60, category: "Dress", picture: "images/dress10.jpg" },
     { name: "Vestito", price: 35, category: "Dress", picture: "images/dress11.jpg" },
     { name: "Vestito per la spiaggia", price: 35, category: "Dress", picture: "images/dress12.jpg" },
-    { name: "Vestito", price: 35, category: "Dress", picture: "images/dress13.jpg" },
-    { name: "Vestito", price: 35, category: "Dress", picture: "images/dress14.jpg" },
-    { name: "Vestito", price: 35, category: "Dress", picture: "images/dress15.jpg" },
+    { name: "Vestito", price: 65, category: "Dress", picture: "images/dress13.jpg" },
+    { name: "Vestito", price: 65, category: "Dress", picture: "images/dress14.jpg" },
+    { name: "Vestito", price: 45, category: "Dress", picture: "images/dress15.jpg" },
     { name: "Vestito", price: 35, category: "Dress", picture: "images/dress16.jpg" },
 
 	
@@ -300,7 +300,7 @@ const productsData = {
     
     { name: "Maglione", price: 65, category: "Sweaters", picture: "images/sweater1.jpg" },
 
-    { name: "Gilet", price: 65, category: "Vests", picture: "images/vest1.jpg" },
+    { name: "Gilet", price: 35, category: "Vests", picture: "images/vest1.jpg" },
 	
     { name: "Gonna", price: 60, category: "Skirts", picture: "images/skirt1.jpg" },
     { name: "Gonna", price: 60, category: "Skirts", picture: "images/skirt2.jpg" },
@@ -349,6 +349,10 @@ const productsData = {
     { name: "Top", price: 35, category: "Tops", picture: "images/top2.jpg" },
     { name: "Top", price: 35, category: "Tops", picture: "images/top3.jpg" },
     { name: "Top", price: 35, category: "Tops", picture: "images/top4.jpg" },
+
+    { name: "Bikini", price: 15, category: "Bikinis", picture: "images/bikini1.jpg" },
+    { name: "Bikini", price: 15, category: "Bikinis", picture: "images/bikini2.jpg" },
+    { name: "Bikini", price: 30, category: "Bikinis", picture: "images/bikini3.jpg" },
 	
     { name: "Outfit", price: 120, category: "Outfits", picture: "images/fit1.jpg" },
     { name: "Outfit", price: 95, category: "Outfits", picture: "images/fit2.jpg" },

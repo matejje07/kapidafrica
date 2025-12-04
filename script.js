@@ -15,7 +15,7 @@ const translations = {
     emailRadio: "E-mail",
     phoneRadio: "Phone (WhatsApp)",
     namePlaceholder: "Enter your name and surname",
-    addressPlaceholder: "Enter your address",
+    addressPlaceholder: "Enter your home address",
     emailPlaceholder: "Enter your e-mail",
     phonePlaceholder: "Enter your phone number",
     paymentLabel: "Payment method:",
@@ -73,7 +73,7 @@ const translations = {
     emailRadio: "E-mail",
     phoneRadio: "Telefono (WhatsApp)",
     namePlaceholder: "Inserisci il tuo nome e cognome",
-    addressPlaceholder: "Inserisci il tuo indirizzo",
+    addressPlaceholder: "Inserisci il tuo indirizzo casa",
     emailPlaceholder: "Inserisci la tua e-mail",
     phonePlaceholder: "Inserisci il tuo numero di telefono",
     paymentLabel: "Metodo di pagamento:",
@@ -139,7 +139,7 @@ const productsData = {
     { name: "Dress", price: 120, category: "Dress", picture: "images/dress6.jpg" },
     { name: "Dress", price: 120, category: "Dress", picture: "images/dress7.jpg" },
     { name: "Dress", price: 120, category: "Dress", picture: "images/dress8.jpg" },
-    { name: "Dress", price: 120, category: "Dress", picture: "images/dress9.jpg" },
+    { name: "Dress", price: 35, category: "Dress", picture: "images/dress9.jpg" },
     { name: "Dress", price: 60, category: "Dress", picture: "images/dress10.jpg" },
     { name: "Dress", price: 35, category: "Dress", picture: "images/dress11.jpg" },
     { name: "Beach Dress", price: 35, category: "Dress", picture: "images/dress12.jpg" },
@@ -172,7 +172,7 @@ const productsData = {
     { name: "Shirt", price: 80, category: "Shirts", picture: "images/shirt21.jpg" },
     { name: "Shirt", price: 65, category: "Shirts", picture: "images/shirt22.jpg" },
     
-    { name: "Sweater", price: 65, category: "Sweaters", picture: "images/sweater1.jpg" },
+    { name: "Sweater", price: 39, category: "Sweaters", picture: "images/sweater1.jpg" },
 
     { name: "Vest", price: 35, category: "Vests", picture: "images/vest1.jpg" },
 
@@ -225,9 +225,9 @@ const productsData = {
     { name: "Top", price: 35, category: "Tops", picture: "images/top3.jpg" },
     { name: "Top", price: 35, category: "Tops", picture: "images/top4.jpg" },
 
-    { name: "Bikini", price: 15, category: "Bikinis", picture: "images/bikini1.jpg" },
-    { name: "Bikini", price: 15, category: "Bikinis", picture: "images/bikini2.jpg" },
-    { name: "Bikini", price: 30, category: "Bikinis", picture: "images/bikini3.jpg" },
+    { name: "Bikini", price: 35, category: "Bikinis", picture: "images/bikini1.jpg" },
+    { name: "Bikini", price: 35, category: "Bikinis", picture: "images/bikini2.jpg" },
+    { name: "Bikini", price: 35, category: "Bikinis", picture: "images/bikini3.jpg" },
 
 	
     { name: "Outfit", price: 120, category: "Outfits", picture: "images/fit1.jpg" },
@@ -298,7 +298,7 @@ const productsData = {
     { name: "Camicia", price: 80, category: "Shirts", picture: "images/shirt21.jpg" },
     { name: "Camicia", price: 65, category: "Shirts", picture: "images/shirt22.jpg" },
     
-    { name: "Maglione", price: 65, category: "Sweaters", picture: "images/sweater1.jpg" },
+    { name: "Maglione", price: 39, category: "Sweaters", picture: "images/sweater1.jpg" },
 
     { name: "Gilet", price: 35, category: "Vests", picture: "images/vest1.jpg" },
 	
@@ -350,9 +350,9 @@ const productsData = {
     { name: "Top", price: 35, category: "Tops", picture: "images/top3.jpg" },
     { name: "Top", price: 35, category: "Tops", picture: "images/top4.jpg" },
 
-    { name: "Bikini", price: 15, category: "Bikinis", picture: "images/bikini1.jpg" },
-    { name: "Bikini", price: 15, category: "Bikinis", picture: "images/bikini2.jpg" },
-    { name: "Bikini", price: 30, category: "Bikinis", picture: "images/bikini3.jpg" },
+    { name: "Bikini", price: 35, category: "Bikinis", picture: "images/bikini1.jpg" },
+    { name: "Bikini", price: 35, category: "Bikinis", picture: "images/bikini2.jpg" },
+    { name: "Bikini", price: 35, category: "Bikinis", picture: "images/bikini3.jpg" },
 	
     { name: "Outfit", price: 120, category: "Outfits", picture: "images/fit1.jpg" },
     { name: "Outfit", price: 95, category: "Outfits", picture: "images/fit2.jpg" },
